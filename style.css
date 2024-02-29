@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px; /* Tamanho base da fonte */
+    line-height: 1.6; /* Altura da linha */
+    background-color: #333;
+    color: white; /* Cor do texto padrão */
+}
+
+header {
+    padding: 20px 0; /* Espaçamento superior e inferior */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; /* Centraliza os itens */
+    background-color: #333; /* Cor de fundo da barra de navegação */
+}
+
+nav li {
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1.6rem; /* Aumenta o tamanho da fonte */
+}
+
+.form-container {
+    background-color: black; /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px auto; /* Margem superior e inferior de 20px, margens laterais automáticas */
+    max-width: 600px; /* Largura máxima do formulário */
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+input[type="checkbox"] {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}   
+
+form button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para os textos */
+h1, h2, p {
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 0;
+    max-height: 300px;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003366;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens */
+    }
+
+    nav li {
+        padding: 10px 0;
+        font-size: 1.4rem;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+}
